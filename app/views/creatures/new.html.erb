@@ -1,0 +1,8 @@
+<h3>Create a new creature </h3>
+
+<%= form_for :creature, url: "/creatures", method: 'post' do |f| %>
+	<%= f.text_field :name, placeholder: "name" %><br><br>
+	<%= f.text_area :description, placeholder: "description..." %><br>
+	<%= f.submit "save creature" %>
+<% end %>
+
